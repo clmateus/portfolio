@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Projetos | Mateus Costa{% endblock %}
+{% block content %}
+    <h2>Projetos que desenvolvi:</h2>
+    <section>
+        <ul>
+            {% for key, value in projects.items %}
+                <li><a href="{% url 'details' id=key %}">{{ value.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

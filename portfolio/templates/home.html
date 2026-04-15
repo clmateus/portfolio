@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Home | Mateus Costa{% endblock %}
+{% block content %}
+    <section>
+        <h1>Sobre mim</h1>
+        <p>Olá! Sou o Mateus, sou desenvolvedor Python.</p>
+    </section>
+    <section>
+        <h2>Habilidades</h2>
+        <ul>
+            {% for key, value in hard_skills.items %}
+                <li>{{ value.name }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section>
+        <h2>Contatos</h2>
+        <p>Email: cl.mateuscosta@gmail.com</p>
+        <p>LinkedIn: clmateus</p>
+    </section>
+{% endblock %}
