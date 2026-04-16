@@ -8,8 +8,8 @@
     <section>
         <h2>Habilidades</h2>
         <ul>
-            {% for key, value in hard_skills.items %}
-                <li>{{ value.name }}</li>
+            {% for skill in skills %}
+                <li>{{ skill.name }}</li>
             {% endfor %}
         </ul>
     </section>

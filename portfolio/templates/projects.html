@@ -4,8 +4,8 @@
     <h2>Projetos que desenvolvi:</h2>
     <section>
         <ul>
-            {% for key, value in projects.items %}
-                <li><a href="{% url 'details' id=key %}">{{ value.title }}</a></li>
+            {% for project in projects %}
+                <li><a href="{% url 'details' project.id %}">{{ project.title }}</a></li>
             {% endfor %}
         </ul>
     </section>
